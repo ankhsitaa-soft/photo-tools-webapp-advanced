@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Tools WebApp</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h2>Photo Tools WebApp</h2>
+
+<div class="tool-box">
+    <h3>1. Image Resize</h3>
+    <input type="file" id="resizeInput">
+    <input type="number" id="resizeWidth" placeholder="Width">
+    <input type="number" id="resizeHeight" placeholder="Height">
+    <button onclick="resizeImage()">Resize</button>
+    <a id="resizeDownload" style="display:none;">Download</a>
+</div>
+
+<div class="tool-box">
+    <h3>2. Background Remove</h3>
+    <input type="file" id="bgInput">
+    <button onclick="removeBG()">Remove Background</button>
+    <a id="bgDownload" style="display:none;">Download</a>
+</div>
+
+<div class="tool-box">
+    <h3>3. Image Compress</h3>
+    <input type="file" id="compressInput">
+    <input type="range" id="compressQuality" min="1" max="100" value="70">
+    <button onclick="compressImage()">Compress</button>
+    <a id="compressDownload" style="display:none;">Download</a>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
